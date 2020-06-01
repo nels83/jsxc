@@ -1,0 +1,13 @@
+diff --git a/node_modules/sdp-jingle-json/lib/parsers.js b/node_modules/sdp-jingle-json/lib/parsers.js
+index f43c2c2..cfa6e61 100644
+--- a/node_modules/sdp-jingle-json/lib/parsers.js
++++ b/node_modules/sdp-jingle-json/lib/parsers.js
+@@ -96,8 +96,6 @@ exports.fmtp = function (line) {
+         value = kv[1];
+         if (key && value) {
+             parsed.push({key: key, value: value});
+-        } else if (key) {
+-            parsed.push({key: '', value: key});
+         }
+     }
+     return parsed;

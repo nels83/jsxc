@@ -30,7 +30,8 @@
     "checking-style-format": "stylelint --cache \"scss/**/*.scss\"",
     "checking-typescript-format": "tslint -c tslint.json \"src/**/*.ts\"",
     "checking-typescript": "tsc --noEmit",
-    "checking-blacklist": "node scripts/search-blacklist.js"
+    "checking-blacklist": "node scripts/search-blacklist.js",
+    "postinstall": "patch-package"
   },
   "husky": {
     "hooks": {
@@ -118,6 +119,8 @@
     "moment": "^2.25.3",
     "node-sass": "^4.14.1",
     "otr": "github:sualko/otr#es6-modules",
+    "patch-package": "^6.2.2",
+    "postinstall-postinstall": "^2.1.0",
     "precompile-handlebars": "^1.0.5",
     "screenfull": "^5.0.2",
     "sha1": "^1.1.1",
